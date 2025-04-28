@@ -5,6 +5,8 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import LoginForm from './Login/LoginForm';
 import Dashboard from './User/Dashboard';
 import Usuarios from './User/Users';
+import Currency from './Currency/Currency';
+import Country from './Country/Country';
 import Layout from './Components/Layout';
 import ProtectedRoute from './Auth/ProtectedRoute';
 
@@ -43,6 +45,8 @@ function App() {
         >
           <Route index element={<Dashboard />} /> {/* Ruta "/" */}
           <Route path="usuarios" element={<Usuarios />} /> {/* Ruta "/usuarios" */}
+          <Route path="currency" element={<Currency />} /> {/* Ruta "/currency" */}
+          <Route path="country" element={<Country />} /> {/* Ruta "/country" */}
         </Route>
 
         {/* Fallback a login o dashboard */}

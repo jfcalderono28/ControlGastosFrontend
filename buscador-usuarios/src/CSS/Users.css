@@ -1,0 +1,155 @@
+/* CSS actualizado */
+.usuarios-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    padding: 0 20px;
+    width: 100%;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .usuarios-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+  }
+  
+  .usuarios-actions input {
+    background-color: #f9f9f9;
+    color: black;
+    padding: 12px 15px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+  }
+  
+  .action-buttons {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+  }
+  
+  .search-button, .create-button {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .search-button {
+    background-color: #6c757d;
+    color: white;
+  }
+  
+  .create-button {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .search-button:hover {
+    background-color: #5a6268;
+  }
+  
+  .create-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .create-form {
+    background-color: #f9f9f9;
+    padding: 25px;
+    border-radius: 10px;
+    width: 100%;
+   
+  }
+  
+  .create-form h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .create-form input {
+    background-color: #f9f9f9;
+    color: black;
+    padding: 12px;
+    margin-bottom: 15px;
+    width: 100%;
+    border: 1px solid #2727271c;
+    border-radius: 6px;
+    font-size: 16px;
+  }
+  
+  .checkbox-group {
+    margin: 20px 0;
+  }
+  
+  .checkbox-group label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  
+  .form-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .form-buttons button {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .form-buttons button:first-child {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .form-buttons button:last-child {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  .usuarios-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .usuarios-table th, .usuarios-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  .usuarios-table th {
+    background-color: #343a40;
+    color: white;
+  }
+  
+  .usuarios-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+
+  .error-text {
+    color: red;
+    font-size: 0.8rem;
+    margin-top: -8px;
+    margin-bottom: 8px;
+  }
+  

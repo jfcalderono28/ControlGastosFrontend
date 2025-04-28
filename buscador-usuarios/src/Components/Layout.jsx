@@ -1,5 +1,6 @@
 // src/components/Layout.jsx
 import { Outlet, Link, useNavigate } from 'react-router-dom';
+import '../CSS/Layout.css';
 
 export default function Layout({ onLogout }) {
   const name = localStorage.getItem('user_name');
@@ -20,15 +21,16 @@ export default function Layout({ onLogout }) {
           <ul>
             <li><button className="nav-button" onClick={() => navigate("/")}>Inicio</button></li>
             <li><button className="nav-button" onClick={() => navigate("/usuarios")}>Usuarios</button></li>
-            <li><button disabled className="nav-button">Reportes</button></li>
-            <li><button disabled className="nav-button">Configuración</button></li>
+            <li><button className="nav-button" onClick={() => navigate("/currency")}>Currency</button></li>
+            <li><button className="nav-button" onClick={() => navigate("/country")}>Country</button></li>
+        
           </ul>
         </nav>
       </aside>
 
       <div className="main-container">
         <header className="navbar">
-          <h1>Dashboard</h1>
+          <h1></h1>
           <div className="user-info">
             <span>Hola, {name}</span>
             <img src={photo} alt="Foto de perfil" className="profile-pic" />

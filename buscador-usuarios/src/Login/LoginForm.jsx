@@ -44,7 +44,7 @@ function LoginForm({ onLogin }) {
       if (response.ok) {
         const token = data.access;
         localStorage.setItem('token', token);
-        localStorage.setItem('refresh', data.refresh); // <-- AÑADIDO
+        localStorage.setItem('refresh', data.refresh); 
       
         // Obtener info del usuario
         const userResponse = await fetch('http://localhost:8000/api/user/info/', {
